@@ -1,0 +1,14 @@
+main, .story-time{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+button{
+    margin: 10px 5px;
+    padding: 8px;
+    background-color: rgba(31, 72, 253, 0.527);
+}
+
+
