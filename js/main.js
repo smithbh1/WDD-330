@@ -1,7 +1,7 @@
 const links = [
     {
       label: "Week1 notes",
-      url: "https://smithbh1.github.io/WDD-330/Week01/index.html"
+      url: "Week01/index.html"
     }
   ]
 
