@@ -8,7 +8,7 @@ function loadStory(){
 function saveStory(){
 
     let storyName = document.querySelector('#story-name').value;
-    let storyMarkup = localStorage.getItem(storyName); 
+    let storyMarkup = document.querySelector('#story-editor').value;
 
     localStorage.setItem(storyName, storyMarkup);
 }
