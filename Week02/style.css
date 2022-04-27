@@ -2,3 +2,11 @@
     display: flex;
     justify-content: center;
 }
+.question, .answers {
+    padding: .5em;
+}
+
+.answers{
+    display: flex;
+    flex-direction: column;
+}
