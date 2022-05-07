@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Assignment</title>
+</head>
+<body>
+    <input type="text" id="number">
+    <input type="text" id="numberTwo">
+    <button onclick="userInput(), validate()">Sum</button>
+    <button onclick="addMachine()">Add Machine</button>
+    <div id="result"></div>
+    <div id="sumResult"></div>
+    <div id="addMachineResult"></div>
+</body>
+<script>
+    
+    function userInput(){
+        const docInput = document.getElementById('number').value;
+
+        document.getElementById('result').innerHTML = `You entered: ${docInput}`;
+
+    }
+
+    function validate(){
+
+        const docInput = document.getElementById('number').value;
+
+        let validNumber = parseInt(docInput);
+        if(validNumber != NaN){
+            document.getElementById('sumResult').innerHTML = `Summed number: ${addFunction(validNumber)}`;
+        }
+
+    }
+    function addFunction(number){
+
+        let sum = 0;
+        
+        for(i = 0; i <= number; i++){
+            sum += i;
+        }
+
+        return sum;
+    }
+    function addMachine(){
+
+        const firstNumber = parseInt(document.getElementById('number').value);
+        const secondNumber = parseInt(document.getElementById('numberTwo').value);
+
+        if(firstNumber != NaN && secondNumber != NaN){
+            document.getElementById('addMachineResult').innerHTML = firstNumber + secondNumber;
+        }
+        
+    }
+
+</script>
+</html>
