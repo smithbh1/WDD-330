@@ -1,0 +1,26 @@
+body{
+    justify-content: center;
+}
+.board {
+    width: 400px;
+    height: 400px;
+}
+.board td,
+.board tr {
+    width: 33.3%;
+    height: 33.3%;
+}
+.board td {
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    font-size: 15px;
+    text-align: center;
+}
+
+.board td:last-child {
+    border-right: 0;
+}
+
+.board tr:last-child td {
+    border-bottom: 0;
+}

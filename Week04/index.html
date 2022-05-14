@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 04 Notes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Notes</h1>
+    <ul>
+        <li>You can use pattern or javascript validation for forms</li>
+        <li>IF you decide to use a "reset", also have a button to restore the "deleted" content</li>
+    </ul>
+    <main>
+        <h2>Storm Report</h2>
+        <form id="myForm">
+            <fieldset>
+                <legend>Personal Info</legend>
+            <label for="fname">Full Name*</label>
+            <input type="text" name="fname" id="fname" required minlength="5" pattern="/[A-Za-z]{5,}+/">
+            <label for="email">Email*</label>
+            <input type="email" name="email" placeholder="my@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+            <label for="phone">Phone Number*</label>
+            <input type="tel" name="phone" id="phone" required placeholder="xxxxxxxxxx" minlength="10">
+            <label for="zipcode">Zipcode*</label>
+            <input type="number" name="zipcode" id="zipcode" required>
+        </fieldset>
+        <fieldset>
+            <legend>Storm Information</legend>
+        
+            <label>Storm Date<input type="date" name="storm_date"></label>
+            
+            <label>Storm Type<input type="text" list="storm_list"></label>
+            
+            <datalist id="storm_list">
+                <option>Blizzard</option>
+                <option>Flash Flood</option>
+                <option>Hail</option>
+                <option>Hurricane</option>
+                <option>Thunderstorm</option>
+                <option>Tornado</option>
+            </datalist>
+            <label>Storm Severity<input type="range" min="0" max="10" step="1" name="severity"></label>
+            <label for="place">Storm Region</label>
+            <select name="place">
+                <option value="" disabled selected>Select a Region...</option>
+                <option value="Salt Lake City">Salt Lake City</option>
+                <option value="West Jordan">West Jordan</option>
+                <option value="St. George">St. George</option>
+            </select>
+        </fieldset>
+            
+            
+
+        </form>
+        <button onclick="displayData()">Report My Storm</button>
+        <div >
+            <ul class="displayFormData">
+
+            </ul>
+
+        </div>
+        <script src="main.js"></script>
+    </main>
+</body>
+</html>
