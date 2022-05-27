@@ -1,0 +1,110 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    background-color: #e1e3ea;
+    height: 100vh;
+    font-family: sans-serif;
+  }
+
+  .app, #filterToDo {
+    width: 60%;
+  }
+
+  .app h1 {
+    color: white;
+    font-size: 40px;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: .5rem .5rem 0 0;
+    background-color: #de3f53;
+}
+
+.app form {
+    display: flex;
+    width: 100%;
+    background-color: #19a6f8;
+  }
+  
+  .app form input {
+    border: none;
+    background-color: #7ec8f3;
+    font-size: 18px;
+    color: white;
+    padding: 10px;
+    width: 90%;
+  }
+  
+  .app form button, #filterToDo {
+    border: none;
+    color: white;
+    background-color: #34b0f8;
+    font-size: 25px;
+    font-weight: 600;
+    height: 42px;
+    width: 25%;
+    cursor: pointer;
+  }
+  .app form button:hover{
+    background-color: #0ca1f7;
+  }
+  .app ul {
+    list-style: none;
+    color: #e0e0e0;
+    padding: 0;
+  }
+  
+  .app ul li {
+    padding: 10px;
+    background: linear-gradient(to left, rgb(168, 230, 241) 10%, #7ec8f3);
+    border: 1px solid #3a4674;
+    margin-bottom: 5px;
+  }
+  
+  .check {
+    width: 0.8em;
+    height: 0.8em;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid rgb(255, 255, 255);
+    -webkit-appearance: none;
+  }
+  
+  .check:checked {
+    background-color: #1dd2af;
+  }
+  
+  .tasks {
+    font-size: 18px;
+    padding: 0 10px;
+  }
+  
+  .tasks:focus {
+    outline: none;
+  }
+  
+
+  .completed {
+    color: rgba(192, 192, 192, 0.8);
+    text-decoration: line-through;
+  }
+  .delete{
+    padding: 5px;
+    background: rgb(241, 59, 59);
+    cursor: pointer;
+  }
+  .delete:hover{
+    background: rgb(177, 4, 4);
+  }
+  #filterToDo {
+  display: block;
+  width: 30vw;
+  margin: auto;
+}
+  @media (max-width:768px) {
+    .app {
+      width: 90%;
+    }
+  }
