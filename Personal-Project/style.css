@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+:root{
+    --background-color: #FFA53B;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+h1, h2, h3, strong, header a{
+    font-family:'Indie Flower', sans-serif
+}
+h1{
+ font-size: calc(12px + 3.5vw);
+}
+h2{
+ font-size: calc(7px + 3.5vw);
+}
+
+h3{
+ font-size: calc(5px + 3.5vw);
+}
+header a{
+ font-size: calc(6px + 2vw);
+ font-weight: 800 !important;
+}
+header{
+    display: flex;
+}
+.left-side{
+    max-width: 50%;
+}
+.left-side img{
+    width:100%;
+}
+.left-side h1{
+    text-align: center;
+}
+.right-side nav{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    list-style-type: none;
+    margin-right:10px;
+    margin-top: -10px;
+}
+.right-side nav a{
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    min-height: calc(150px + 5vw);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#search-poke{
+    grid-row: 1 / 1;
+    grid-column: 1 / 1;
+    background-color: #00C4CC;
+    cursor: pointer;
+}
+#edit-team {
+    grid-row: 1 / 1;
+    grid-column: 2 / 2;
+    background-color: #FF738E;
+}
+#trending-poke{
+    grid-row: 2 / 2;
+    grid-column: 1 / 1;
+    background-color: #A548FF;
+}
+#custom-poke{
+    grid-row: 2 / 2;
+    grid-column: 2 / 2;
+    background-color: #FFBD59;
+}
+body{
+    background: var(--background-color);
+}
+.card{
+    width: 33vw;
+    border: 3px solid #000;
+}
+.card-back{
+
+}
+.card-front{
+    
+}
+@media (max-width: 700px){
+
+}
