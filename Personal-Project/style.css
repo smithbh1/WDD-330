@@ -79,14 +79,111 @@ body{
     background: var(--background-color);
 }
 .card{
-    width: 33vw;
-    border: 3px solid #000;
+    width: 25vw;
+    border: 5px solid #E4D104;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin: 10px;
+}
+.card img{
+    border-bottom: 2px solid #000;
+    width: 100%;
+}
+.card-flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card ul{
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 0;
+    font-family: fantasy;
+    font-weight: 600;
+    font-size: calc(10px + 1.3vw);
+}
+
+:root{
+    --grass: linear-gradient(to bottom right, #aae5b7,#78cf8b,#4fb665,#319d49,#4fb665,#78cf8b);
+    --poison: rgba(248, 65, 242, 0.541);
+    --fire: linear-gradient(to bottom right, #ffbfba,#ff978f,#ff756b,#ff594c,#ff756b,#ff978f);
+    --water: linear-gradient(to bottom right, #d9e4ec,#adc1d1,#7d99af,#557792,#7d99af,#adc1d1);
+    --flying: rgba(178, 204, 221, 0.5);
+    --ground: rgba(128, 95, 5, 0.5);
+    --electric: linear-gradient(to bottom right, #ffffa4,#fff870,#fff200,#fff870,#ffffa4,#fff870);
+    --bug: rgba(7, 194, 79, 0.5);
+    --normal: rgba(255, 255, 255, .5);
+    --fighting: rgba(167, 18, 7, 0.75);
+    --grass-solid: rgba(10, 223, 10, 0.5);
+    --fire-solid: rgba(245, 44, 9, 0.75);
+    
+}
+.grass{
+    background: var(--grass);
+}
+.poison{
+    background: var(--poison);
+}
+.grass.poison{
+    background-image: linear-gradient(to top right, var(--grass-solid) 50%, var(--poison) 30%);
+}
+.fire{
+    background: var(--fire);
+}
+.water{
+    background: var(--water);
+}
+.flying{
+    background: var(--flying);
+}
+.fire.flying{
+    background-image: linear-gradient(to top right, var(--fire-solid) 50%, var(--flying) 30%);
+}
+.bug{
+    background: var(--bug);
+}
+.electric{
+    background: var(--electric);
+}
+.ground , .rock{
+    background: var(--ground);
+}
+.normal{
+    background: var(--normal)
+}
+.psychic{
+    background-image: radial-gradient(var(--normal), var(--poison))
+}
+.fighting{
+    background: var(--fighting);
+}
+.dragon{
+    background-image: radial-gradient(var(--fighting), var(--flying));
 }
 .card-back{
-
+ width: 25vw;
+ min-height: 200px;
+ background: linear-gradient(to bottom right, #d9e4ec,#adc1d1,#a2c5df,#93c3eb);
 }
-.card-front{
-    
+.search-bar input{
+    border-radius: 7px;
+    padding: 20px;
+    min-width: 80vw;
+    margin: auto;
+    display: none;
+}
+.visible{
+    display: block !important;
+}
+.flip{
+
+    transform: rotateY(180deg);
+    perspective: 1000px;
+    transition: all 1.5s ease-in-out;
 }
 @media (max-width: 700px){
 

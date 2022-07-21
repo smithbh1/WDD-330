@@ -17,23 +17,26 @@
         <div class="right-side">
             <nav>
                 
-                    <a id="search-poke">Search Pokemon</a>
-                    <a id="edit-team" href="">Edit My Team</a>
-                    <a id="trending-poke" href="">Trending Pokemon</a>
-                    <a id="custom-poke" href="">Make a Custom Pokemon</a>
+                    <a id="search-poke" onclick="showSearch()">Search Pokemon</a>
+                    <a id="edit-team" href="">My Team</a>
+                    <a id="trending-poke" href="https://www.ggrecon.com/articles/most-popular-pokemon/" target="_blank">Trending Pokemon</a>
+                    <a id="custom-poke" href="http://archive.pokedit.com/pokemon-maker/" target="_blank">Make a Custom Pokemon</a>
                 
             </nav>
         </div>
 
     </header>
     <main>
-        <h2>My Lineup</h2>
+        <div class="search-bar">
+            <input id="searchbar" onkeyup="searchPokemon()" type="text"
+        name="search" placeholder="Search Pokemon..">
+        </div>
+        <h2>Original Pokemon</h2>
+        <div class="my-cards">
+
+        </div>
         <div class="card-flex-container">
-            <div class="card">
-                <br />
-                <br />
-                <br />
-            </div>
+            
         </div>
     </main>
     <footer>
